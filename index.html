@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard SpaceX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts/main.js" defer></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<figure>
+			<img class="logo" src="img/spaceX-logo.svg" alt="spaceX logo">
+		</figure>
+	</header>
+	<main>
+		<div class="flex_container">
+			<div class="content speed">
+				<h2>Current Speed</h2>
+				<div class="circle small">
+					<h3 id="number"></h3>
+					<p>kph<p>
+				</div>
+
+			</div>
+			<div class="content">
+				<h2>Fuel usage</h2>
+				<div id="chartContainer1"></div>
+			</div>
+			<div class="content">
+				<h2>Food Reserves</h2>
+				<div id="chartContainer2"></div>
+			</div>
+
+		</div>
+	</main>
+</body>
+
+</html>

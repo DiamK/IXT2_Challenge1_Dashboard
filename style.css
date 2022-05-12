@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #003355;
+}
+
+header {
+    background-color: #005288;
+    border-bottom: 3px solid black;
+    padding: 0;
+    height: 110px;
+}
+
+.logo {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    margin: 20px;
+}
+
+#chartContainer1 {
+    height: 300px;
+}
+
+#chartContainer2 {
+    height: 300px;
+}
+
+.circle.small {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circle h3 {
+    color: white;
+    text-align: center;
+    font-size: 6.5em;
+}
+
+.circle p {
+    color: white;
+    font-size: 2em;
+    margin-top: -50px;
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+
+    /* fix logo center */
+    .logo {
+        padding-left: 20px;
+    }
+
+    .content.speed {
+        max-width: 100%;
+    }
+
+    .content {
+        max-width: 44%;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px) {
+
+    #chartContainer1 {
+        height: 375px;
+    }
+
+    #chartContainer2 {
+        height: 375px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1600px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #chartContainer1 {
+        height: 450px;
+    }
+
+    #chartContainer2 {
+        height: 450px;
+    }
+}
